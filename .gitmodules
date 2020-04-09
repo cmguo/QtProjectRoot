@@ -78,3 +78,7 @@
 	path = thirdparty
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_thirdparty.git
 	branch = develop
+[submodule "RobotPen"]
+	path = RobotPen
+	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_robot_pen.git
+	branch = develop/2004
