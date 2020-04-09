@@ -1,10 +1,10 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    InteractionLib \
     QtJsonSerializer/src/jsonserializer \
     #qtpromise/src/qtpromise \
-    log4qt
+    log4qt \
+    thirdparty \
 
 SUBDIRS += \
     QtComposition \
@@ -17,7 +17,8 @@ SUBDIRS += \
     Geometry \
     TeachingTools \
     InteractBase \
-    QtTalWidget  \
+    RobotPen \
+    QtTalWidget \
 
 SUBDIRS += \
     EventsLog \
@@ -30,4 +31,4 @@ SUBDIRS += \
     Main \
 
 SUBDIRS += \
-#    QtApp \
+    QtApp \
