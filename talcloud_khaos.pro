@@ -19,6 +19,7 @@ SUBDIRS += \
     InteractBase \
     RobotPen \
     QtTalWidget \
+    Account
 
 SUBDIRS += \
     EventsLog \
