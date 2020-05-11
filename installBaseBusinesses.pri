@@ -50,3 +50,11 @@ else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../TeachingLib/debu
 else:unix: LIBS += -L$$OUT_PWD/../TeachingLib/ -lTeachingLib
 INCLUDEPATH += $$PWD/TeachingLib
 DEPENDPATH += $$PWD/TeachingLib
+
+# install html
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Html/release/ -lHtmld
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../Html/debug/ -lHtmld
+else:unix: LIBS += -L$$OUT_PWD/../Html/ -lHtmld
+
+INCLUDEPATH += $$PWD/../Html
+DEPENDPATH += $$PWD/../Html

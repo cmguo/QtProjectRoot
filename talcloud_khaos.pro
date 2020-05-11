@@ -4,7 +4,6 @@ SUBDIRS += \
     QtJsonSerializer/src/jsonserializer \
     #qtpromise/src/qtpromise \
     log4qt \
-    thirdparty \
 
 SUBDIRS += \
     QtComposition \
@@ -30,6 +29,3 @@ SUBDIRS += \
 SUBDIRS += \
     Html \
     Main \
-
-SUBDIRS += \
-    QtApp \
