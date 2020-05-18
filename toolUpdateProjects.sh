@@ -40,6 +40,21 @@ if [ "$updateGithubs" == "y" ]; then
     done
 fi
 
+if [ "$updateGithubs" == "y" ]; then
+    GITHUB_PROJECTS_2="thirdparty"
+    echo "Updating github projects ($GITHUB_PROJECTS_2)"
+    echo
+    for g in $GITHUB_PROJECTS_2
+    do
+        echo "Updating $g ..."
+        cd $g
+        echo "Entering $(pwd)"
+        git checkout develop
+        git pull --rebase
+        cd ..
+        echo
+    done
+fi
 
 TAL_PROJECTS="EventsLog Account docCovert Geometry Html InkCanvas InteractBase InteractionLib Main QtTalWidget RobotPen Showboard TeachingLib TeachingTools thirdparty"
 echo "Updating github projects ($TAL_PROJECTS)"
