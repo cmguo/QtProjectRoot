@@ -25,7 +25,7 @@ done
 
 
 if [ "$updateGithubs" == "y" ]; then
-    GITHUB_PROJECTS="QtComposition qtpromise QtRestClient QtEventBus  log4qt QtJsonSerializer thirdparty"
+    GITHUB_PROJECTS="QtComposition qtpromise QtRestClient QtEventBus  log4qt QtJsonSerializer"
     echo "Updating github projects ($GITHUB_PROJECTS)"
     echo
     for g in $GITHUB_PROJECTS
@@ -41,7 +41,7 @@ if [ "$updateGithubs" == "y" ]; then
 fi
 
 if [ "$updateGithubs" == "y" ]; then
-    GITHUB_PROJECTS_2="thirdparty"
+    GITHUB_PROJECTS_2="thirdparty docCovert"
     echo "Updating github projects ($GITHUB_PROJECTS_2)"
     echo
     for g in $GITHUB_PROJECTS_2
@@ -56,7 +56,7 @@ if [ "$updateGithubs" == "y" ]; then
     done
 fi
 
-TAL_PROJECTS="EventsLog Account docCovert Geometry Html InkCanvas InteractBase InteractionLib Main QtTalWidget RobotPen Showboard TeachingLib TeachingTools thirdparty"
+TAL_PROJECTS="EventsLog Account Geometry Html InkCanvas InteractBase InteractionLib Main QtTalWidget RobotPen Showboard TeachingLib TeachingTools"
 echo "Updating github projects ($TAL_PROJECTS)"
 echo
 for g in $TAL_PROJECTS
@@ -71,7 +71,5 @@ do
     echo
 done
 
-
 echo "Entering $(pwd)"
-echo "All done. :)"
-
+echo "All done."
