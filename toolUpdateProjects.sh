@@ -23,7 +23,7 @@ while [ "$updateGithubs" == "" ]; do
   read -p "Do we update githubs? y or n : " updateGithubs
 done
 
-echo "Updating root project"
+echo "Updating root project ..."
 git stash
 git pull --rebase
 echo "Root project updated."
