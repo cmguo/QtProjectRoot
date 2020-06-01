@@ -18,7 +18,7 @@ done
 echo "Your target branch is $targetBranch"
 echo
 
-
+updateGithubs="y"
 while [ "$updateGithubs" == "" ]; do
   read -p "Do we update githubs? y or n : " updateGithubs
 done
@@ -45,7 +45,7 @@ if [ "$updateGithubs" == "y" ]; then
 fi
 
 if [ "$updateGithubs" == "y" ]; then
-    GITHUB_PROJECTS_2="thirdparty docCovert"
+    GITHUB_PROJECTS_2="thirdparty docCovert uibase"
     echo "Updating github projects ($GITHUB_PROJECTS_2)"
     echo
     for g in $GITHUB_PROJECTS_2
