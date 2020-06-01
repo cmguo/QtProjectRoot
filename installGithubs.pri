@@ -56,3 +56,10 @@ else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../QtEventBus/debug
 else:unix: LIBS += -L$$OUT_PWD/../QtEventBus/ -lQtEventBus
 INCLUDEPATH += $$PWD/QtEventBus
 DEPENDPATH += $$PWD/QtEventBus
+
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../UiBase/release/ -lUiBase
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../UiBase/debug/ -lUiBased
+else:unix: LIBS += -L$$OUT_PWD/../UiBase/ -lUiBase
+INCLUDEPATH += $$PWD/UiBase
+DEPENDPATH += $$PWD/UiBase

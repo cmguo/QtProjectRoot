@@ -4,6 +4,7 @@ SUBDIRS += \
     QtJsonSerializer/src/jsonserializer \
     #qtpromise/src/qtpromise \
     log4qt \
+    UiBase
 
 SUBDIRS += \
     QtComposition \
