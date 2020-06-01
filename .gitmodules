@@ -69,7 +69,7 @@
 [submodule "Html"]
 	path = Html
 	url = git@git.100tal.com:zhihuijiaoyu_solution/seg-iclass-plugin-fe.git
-	branch = develop/2004
+	branch = feature/1.8
 [submodule "Main"]
 	path = Main
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_main.git
