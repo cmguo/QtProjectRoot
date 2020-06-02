@@ -4,11 +4,8 @@ SUBDIRS += \
     QtJsonSerializer/src/jsonserializer \
     #qtpromise/src/qtpromise \
     log4qt \
-<<<<<<< HEAD
     UiBase
-=======
     #thirdparty \
->>>>>>> for pull
 
 SUBDIRS += \
     QtComposition \
@@ -24,7 +21,7 @@ SUBDIRS += \
     RobotPen \
     QtTalWidget \
     Account \
-    assistant\Upgrade\Upgrade.pro \
+    assistant/Upgrade \
 
 SUBDIRS += \
     EventsLog \
@@ -35,6 +32,3 @@ SUBDIRS += \
 SUBDIRS += \
     Html \
     Main \
-
-SUBDIRS += \
-    #QtApp \
