@@ -61,7 +61,7 @@ if [ "$updateGithubs" == "y" ]; then
 fi
 
 TAL_PROJECTS="EventsLog Account Geometry Html InkCanvas InteractBase InteractionLib Main QtTalWidget RobotPen Showboard TeachingLib TeachingTools assistant"
-echo "Updating github projects ($TAL_PROJECTS)"
+echo "Updating tal projects ($TAL_PROJECTS)"
 echo
 for g in $TAL_PROJECTS
 do
@@ -70,6 +70,21 @@ do
     echo "Entering $(pwd)"
     git stash
     git checkout $targetBranch
+    git pull --rebase
+    cd ..
+    echo
+done
+
+TAL_PROJECTS2="Html"
+echo "Updating tal projects (TAL_PROJECTS2)"
+echo
+for g in TAL_PROJECTS2
+do
+    echo "Updating $g ..."
+    cd $g
+    echo "Entering $(pwd)"
+    git stash
+    git checkout feature/1.8
     git pull --rebase
     cd ..
     echo
