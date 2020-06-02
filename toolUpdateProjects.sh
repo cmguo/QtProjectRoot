@@ -60,7 +60,7 @@ if [ "$updateGithubs" == "y" ]; then
     done
 fi
 
-TAL_PROJECTS="EventsLog Account Geometry Html InkCanvas InteractBase InteractionLib Main QtTalWidget RobotPen Showboard TeachingLib TeachingTools assistant"
+TAL_PROJECTS="EventsLog Account Geometry InkCanvas InteractBase InteractionLib Main QtTalWidget RobotPen Showboard TeachingLib TeachingTools assistant"
 echo "Updating tal projects ($TAL_PROJECTS)"
 echo
 for g in $TAL_PROJECTS
@@ -78,7 +78,7 @@ done
 TAL_PROJECTS2="Html"
 echo "Updating tal projects (TAL_PROJECTS2)"
 echo
-for g in TAL_PROJECTS2
+for g in $TAL_PROJECTS2
 do
     echo "Updating $g ..."
     cd $g
