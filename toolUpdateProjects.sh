@@ -78,7 +78,7 @@ do
 done
 
 TAL_PROJECTS2="Html"
-echo "Updating tal projects (TAL_PROJECTS2)"
+echo "Updating tal projects ($TAL_PROJECTS2)"
 echo
 for g in $TAL_PROJECTS2
 do
