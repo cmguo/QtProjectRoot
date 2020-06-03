@@ -28,6 +28,7 @@ echo "Updating root project ..."
 git stash
 git pull --rebase
 echo "Root project updated."
+echo
 
 if [ "$updateGithubs" == "y" ]; then
     GITHUB_PROJECTS="QtComposition qtpromise QtRestClient QtEventBus  log4qt QtJsonSerializer"
