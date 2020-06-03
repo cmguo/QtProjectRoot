@@ -4,13 +4,14 @@
 
 echo "Tal branch checkouting program is running now."
 
-currentVersion=$(git symbolic-ref --short HEAD)
-read -p "Current version is $currentVersion, are you sure to continue? Please ensure your current branch is clean, submodules are set correctly. Press any key to contine, [ctrl + c]  to stop." -n 1 -r
+currentBranch=$(git symbolic-ref --short HEAD)
+read -p "Current branch is $currentBranch, are you sure to continue? Please ensure your current branch is clean, submodules are set correctly. Press any key to contine, [ctrl + c]  to stop." -n 1 -r
 echo
 
 #echo "Try to set submodule to main submitted hashcode"
 #git submodule update
 
+targetBranch=$currentBranch
 while [ "$targetBranch" == "" ]; do
   read -p "Please input your target branch name: " targetBranch
 done
