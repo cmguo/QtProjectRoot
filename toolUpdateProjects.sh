@@ -25,10 +25,8 @@ while [ "$updateGithubs" == "" ]; do
 done
 
 echo "Updating root project ..."
-git stash
 git checkout $targetBranch
 git pull --rebase
-git stash pop
 echo "Root project updated."
 echo
 
@@ -41,10 +39,8 @@ if [ "$updateGithubs" == "y" ]; then
         echo "Updating $g ..."
         cd $g
         echo "Entering $(pwd)"
-        git stash
         git checkout master
         git pull --rebase
-        git stash pop
         cd ..
         echo
     done
@@ -59,10 +55,8 @@ if [ "$updateGithubs" == "y" ]; then
         echo "Updating $g ..."
         cd $g
         echo "Entering $(pwd)"
-        git stash
         git checkout develop
         git pull --rebase
-        git stash pop
         cd ..
         echo
     done
@@ -76,10 +70,8 @@ do
     echo "Updating $g ..."
     cd $g
     echo "Entering $(pwd)"
-    git stash
     git checkout $targetBranch
     git pull --rebase
-    git stash pop
     cd ..
     echo
 done
@@ -92,10 +84,8 @@ do
     echo "Updating $g ..."
     cd $g
     echo "Entering $(pwd)"
-    git stash
     git checkout feature/1.8
     git pull --rebase
-    git stash pop
     cd ..
     echo
 done
