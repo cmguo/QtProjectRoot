@@ -83,7 +83,7 @@
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_robot_pen.git
 	branch = develop/2004
 [submodule "Assistant"]
-    path = assistant
+    path = Assistant
     url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_assistant.git
     branch = develop/2004
 [submodule "UiBase"]
