@@ -26,6 +26,7 @@ done
 
 echo "Updating root project ..."
 git stash
+#git checkout $targetBranch
 git pull --rebase
 echo "Root project updated."
 echo
