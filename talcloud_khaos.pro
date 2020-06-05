@@ -1,7 +1,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    QtJsonSerializer/src/jsonserializer \
+    #QtJsonSerializer/src/jsonserializer \
     #qtpromise/src/qtpromise \
     log4qt \
     UiBase \
