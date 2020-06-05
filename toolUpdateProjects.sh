@@ -3,6 +3,7 @@
 # This program is used for creating branches of main and its submodules.
 
 echo "Tal branch checkouting program is running now."
+echo
 
 currentBranch=$(git symbolic-ref --short HEAD)
 read -p "Current branch is $currentBranch, are you sure to continue? Please ensure your current branch is clean, submodules are set correctly. Press any key to contine, [ctrl + c]  to stop." -n 1 -r
