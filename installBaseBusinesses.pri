@@ -31,9 +31,9 @@ DEPENDPATH += $$PWD/QtTalWidget
 
 
 # install account
-win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Account/release/ -lAccountd
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Account/release/ -lAccount
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../Account/debug/ -lAccountd
-else:unix: LIBS += -L$$OUT_PWD/../Account/ -lAccountd
+else:unix: LIBS += -L$$OUT_PWD/../Account/ -lAccount
 INCLUDEPATH += $$PWD/Account
 DEPENDPATH += $$PWD/Account
 
@@ -52,9 +52,9 @@ INCLUDEPATH += $$PWD/TeachingLib
 DEPENDPATH += $$PWD/TeachingLib
 
 # install html
-win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Html/release/ -lHtmld
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Html/release/ -lHtml
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../Html/debug/ -lHtmld
-else:unix: LIBS += -L$$OUT_PWD/../Html/ -lHtmld
+else:unix: LIBS += -L$$OUT_PWD/../Html/ -lHtml
 
 INCLUDEPATH += $$PWD/../Html
 DEPENDPATH += $$PWD/../Html
