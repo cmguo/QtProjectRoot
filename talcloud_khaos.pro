@@ -22,6 +22,7 @@ SUBDIRS += \
     QtTalWidget \
     Account \
     assistant/Upgrade \
+	Salt/salt/Salt.pro \
 
 SUBDIRS += \
     EventsLog \
