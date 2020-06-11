@@ -56,5 +56,5 @@ win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Html/release/ -lHtm
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../Html/debug/ -lHtmld
 else:unix: LIBS += -L$$OUT_PWD/../Html/ -lHtml
 
-INCLUDEPATH += $$PWD/../Html
-DEPENDPATH += $$PWD/../Html
+INCLUDEPATH += $$PWD/Html
+DEPENDPATH += $$PWD/Html
