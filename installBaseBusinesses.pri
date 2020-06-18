@@ -22,12 +22,12 @@ INCLUDEPATH += $$PWD/Geometry
 DEPENDPATH += $$PWD/Geometry
 
 
-# install qttalwidget
-win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../QtTalWidget/release/ -lQtTalWidget
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../QtTalWidget/debug/ -lQtTalWidgetd
-else:unix: LIBS += -L$$OUT_PWD/../QtTalWidget/ -lQtTalWidget
-INCLUDEPATH += $$PWD/QtTalWidget
-DEPENDPATH += $$PWD/QtTalWidget
+# install TalWeb
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../TalWeb/release/ -lTalWeb
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../TalWeb/debug/ -lTalWebd
+else:unix: LIBS += -L$$OUT_PWD/../TalWeb/ -lTalWeb
+INCLUDEPATH += $$PWD/TalWeb
+DEPENDPATH += $$PWD/TalWeb
 
 
 # install account

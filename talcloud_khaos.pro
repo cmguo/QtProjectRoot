@@ -19,7 +19,7 @@ SUBDIRS += \
     TeachingTools \
     InteractBase \
     RobotPen \
-    QtTalWidget \
+    TalWeb \
     Account \
     assistant/Upgrade \
 	Salt/salt/Salt.pro \

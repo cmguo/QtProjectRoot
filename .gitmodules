@@ -94,3 +94,7 @@
 	path = Salt
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_customization.git
 	branch = develop/2004
+[submodule "TalWeb"]
+	path = TalWeb
+	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_qtwidgets.git
+	branch = develop/2004
