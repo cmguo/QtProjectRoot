@@ -46,10 +46,6 @@
 	path = TeachingLib
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_teaching.git
 	branch = develop/2004
-[submodule "QtTalWidget"]
-	path = QtTalWidget
-	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_qtwidgets.git
-	branch = develop/2004
 [submodule "EventsLog"]
 	path = EventsLog
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_eventslog.git
@@ -82,10 +78,6 @@
 	path = RobotPen
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_robot_pen.git
 	branch = develop/2004
-[submodule "Assistant"]
-    path = assistant
-    url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_assistant.git
-    branch = develop/2004
 [submodule "UiBase"]
 	path = UiBase
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_uibase.git
@@ -97,4 +89,8 @@
 [submodule "TalWeb"]
 	path = TalWeb
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_qtwidgets.git
+	branch = develop/2004
+[submodule "Assistant"]
+	path = Assistant
+	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_assistant.git
 	branch = develop/2004
