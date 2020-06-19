@@ -21,7 +21,7 @@ SUBDIRS += \
     RobotPen \
     TalWeb \
     Account \
-    assistant/Upgrade \
+    Assistant/Upgrade \
 	Salt/salt/Salt.pro \
 
 SUBDIRS += \
