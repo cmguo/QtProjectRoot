@@ -48,7 +48,7 @@ if [ "$updateGithubs" == "y" ]; then
 fi
 
 if [ "$updateGithubs" == "y" ]; then
-    GITHUB_PROJECTS_2="thirdparty docCovert uibase"
+    GITHUB_PROJECTS_2="thirdparty docCovert"
     echo "Updating github projects ($GITHUB_PROJECTS_2)"
     echo
     for g in $GITHUB_PROJECTS_2
@@ -63,7 +63,7 @@ if [ "$updateGithubs" == "y" ]; then
     done
 fi
 
-TAL_PROJECTS="EventsLog Account Geometry InkCanvas InteractBase InteractionLib Main TalWeb RobotPen Showboard TeachingLib TeachingTools Assistant Salt"
+TAL_PROJECTS="EventsLog Account Geometry InkCanvas InteractBase InteractionLib Main TalWeb RobotPen Showboard TeachingLib TeachingTools Assistant Salt UiBase"
 echo "Updating tal projects ($TAL_PROJECTS)"
 echo
 for g in $TAL_PROJECTS
