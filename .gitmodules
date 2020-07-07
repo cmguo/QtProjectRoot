@@ -81,7 +81,7 @@
 [submodule "UiBase"]
 	path = UiBase
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_uibase.git
-	branch = develop
+    branch = develop/2004
 [submodule "Salt"]
 	path = Salt
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_customization.git
