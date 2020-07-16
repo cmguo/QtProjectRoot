@@ -1,3 +1,6 @@
+PRODUCT_CONFIG=$$(PRODUCT_CONFIG)
+CONFIG += $$PRODUCT_CONFIG
+
 OUTPUT_DIR=$$(OUTPUT_DIR)
 isEmpty(OUTPUT_DIR) {
     CONFIG(release, debug|release): DESTDIR = $$OUT_PWD/../release
@@ -8,8 +11,6 @@ isEmpty(OUTPUT_DIR) {
 }
 
 LIBS += -L$$DESTDIR
-
-message($$DESTDIR)
 
 # special rules for visual studio
 msvc: include($$PWD/msvc.pri)

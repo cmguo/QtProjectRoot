@@ -22,7 +22,7 @@ SUBDIRS += \
     TalWeb \
     Account \
     Assistant/Upgrade \
-	Salt/salt/Salt.pro \
+    Salt/salt/Salt.pro \
 
 SUBDIRS += \
     EventsLog \
@@ -33,3 +33,4 @@ SUBDIRS += \
 SUBDIRS += \
     Html \
     Main \
+    #QtApp \
