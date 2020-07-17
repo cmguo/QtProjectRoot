@@ -25,6 +25,7 @@ while [ "$updateGithubs" == "" ]; do
   read -p "Do we update githubs? y or n : " updateGithubs
 done
 
+
 echo "Updating root project ..."
 git checkout $targetBranch
 git pull --rebase
@@ -32,10 +33,10 @@ echo "Root project updated."
 echo
 
 if [ "$updateGithubs" == "y" ]; then
-    GITHUB_PROJECTS="QtComposition qtpromise QtRestClient QtEventBus  log4qt QtJsonSerializer"
-    echo "Updating github projects ($GITHUB_PROJECTS)"
+    PROJECTS="QtComposition qtpromise QtRestClient QtEventBus  log4qt QtJsonSerializer"
+    echo "Updating github projects ($PROJECTS)"
     echo
-    for g in $GITHUB_PROJECTS
+    for g in $PROJECTS
     do
         echo "Updating $g ..."
         cd $g
@@ -48,10 +49,10 @@ if [ "$updateGithubs" == "y" ]; then
 fi
 
 if [ "$updateGithubs" == "y" ]; then
-    GITHUB_PROJECTS_2="thirdparty docCovert"
-    echo "Updating github projects ($GITHUB_PROJECTS_2)"
+    PROJECTS="thirdparty docCovert"
+    echo "Updating github projects ($PROJECTS)"
     echo
-    for g in $GITHUB_PROJECTS_2
+    for g in $PROJECTS
     do
         echo "Updating $g ..."
         cd $g
@@ -63,29 +64,43 @@ if [ "$updateGithubs" == "y" ]; then
     done
 fi
 
-TAL_PROJECTS="EventsLog Account Geometry InkCanvas InteractBase InteractionLib Main TalWeb RobotPen Showboard TeachingLib TeachingTools Assistant Salt UiBase"
-echo "Updating tal projects ($TAL_PROJECTS)"
+PROJECTS="Showboard Geometry InkCanvas TeachingTools TeachingLib EventsLog InteractBase InteractionLib Account Main RobotPen UiBase Salt TalWeb Assistant"
+echo "Updating tal projects ($PROJECTS)"
 echo
-for g in $TAL_PROJECTS
+for g in $PROJECTS
 do
     echo "Updating $g ..."
     cd $g
     echo "Entering $(pwd)"
-    git checkout $targetBranch
+    git checkout develop/master
     git pull --rebase
     cd ..
     echo
 done
 
-TAL_PROJECTS2="Html"
-echo "Updating tal projects ($TAL_PROJECTS2)"
+PROJECTS="Html"
+echo "Updating tal projects ($PROJECTS)"
 echo
-for g in $TAL_PROJECTS2
+for g in $PROJECTS
 do
     echo "Updating $g ..."
     cd $g
     echo "Entering $(pwd)"
     git checkout feature/1.8
+    git pull --rebase
+    cd ..
+    echo
+done
+
+PROJECTS="XhtHtml"
+echo "Updating tal projects ($PROJECTS)"
+echo
+for g in $PROJECTS
+do
+    echo "Updating $g ..."
+    cd $g
+    echo "Entering $(pwd)"
+    git checkout feature/1.0
     git pull --rebase
     cd ..
     echo
