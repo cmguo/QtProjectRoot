@@ -5,6 +5,9 @@
 echo "Tal branch checkouting program is running now."
 echo
 
+echo "Before run this script, make sure you have clone your submodules properly by calling [git submodule update]"
+echo
+
 currentBranch=$(git symbolic-ref --short HEAD)
 read -p "Current branch is $currentBranch, are you sure to continue? Please ensure your current branch is clean, submodules are set correctly. Press any key to contine, [ctrl + c]  to stop." -n 1 -r
 echo
