@@ -27,6 +27,7 @@ done
 
 
 echo "Updating root project ..."
+git fetch
 git checkout $targetBranch
 git pull --rebase
 echo "Root project updated."
@@ -41,6 +42,7 @@ if [ "$updateGithubs" == "y" ]; then
         echo "Updating $g ..."
         cd $g
         echo "Entering $(pwd)"
+        git fetch
         git checkout master
         git pull --rebase
         cd ..
@@ -57,6 +59,7 @@ if [ "$updateGithubs" == "y" ]; then
         echo "Updating $g ..."
         cd $g
         echo "Entering $(pwd)"
+        git fetch
         git checkout develop
         git pull --rebase
         cd ..
@@ -72,6 +75,7 @@ do
     echo "Updating $g ..."
     cd $g
     echo "Entering $(pwd)"
+    git fetch
     git checkout develop/master
     git pull --rebase
     cd ..
@@ -86,6 +90,7 @@ do
     echo "Updating $g ..."
     cd $g
     echo "Entering $(pwd)"
+    git fetch
     git checkout feature/1.8
     git pull --rebase
     cd ..
@@ -100,6 +105,7 @@ do
     echo "Updating $g ..."
     cd $g
     echo "Entering $(pwd)"
+    git fetch
     git checkout feature/1.0
     git pull --rebase
     cd ..
