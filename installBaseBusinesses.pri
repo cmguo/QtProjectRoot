@@ -52,9 +52,8 @@ INCLUDEPATH += $$PWD/TeachingLib
 DEPENDPATH += $$PWD/TeachingLib
 
 # install html
-win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Html/release/ -lHtml
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../Html/debug/ -lHtmld
-else:unix: LIBS += -L$$OUT_PWD/../Html/ -lHtml
-
-INCLUDEPATH += $$PWD/Html
-DEPENDPATH += $$PWD/Html
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../XhtHtml/release/ -lHtml
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../XhtHtml/debug/ -lHtmld
+else:unix: LIBS += -L$$OUT_PWD/../XhtHtml/ -lHtml
+INCLUDEPATH += $$PWD/XhtHtml
+DEPENDPATH += $$PWD/XhtHtml

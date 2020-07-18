@@ -34,7 +34,30 @@
 	branch = develop
 
 
-
+[submodule "UiBase"]
+	path = UiBase
+	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_uibase.git
+    branch = develop/master
+[submodule "TalWeb"]
+    path = TalWeb
+    url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_qtwidgets.git
+    branch = develop/master
+[submodule "InkCanvas"]
+	path = InkCanvas
+	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_inkcanvas.git
+	branch = develop/master
+[submodule "EventsLog"]
+    path = EventsLog
+    url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_eventslog.git
+    branch = develop/master
+[submodule "Assistant"]
+	path = Assistant
+	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_assistant.git
+	branch = develop/master
+[submodule "RobotPen"]
+	path = RobotPen
+	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_robot_pen.git
+	branch = develop/master
 [submodule "Showboard"]
 	path = Showboard
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_show_board.git
@@ -43,21 +66,13 @@
 	path = Geometry
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_geometry.git
 	branch = develop/master
-[submodule "InkCanvas"]
-	path = InkCanvas
-	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_inkcanvas.git
-	branch = develop/master
+[submodule "TeachingLib"]
+    path = TeachingLib
+    url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_teaching.git
+    branch = develop/master
 [submodule "TeachingTools"]
 	path = TeachingTools
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_teachingtools.git
-	branch = develop/master
-[submodule "TeachingLib"]
-	path = TeachingLib
-	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_teaching.git
-	branch = develop/master
-[submodule "EventsLog"]
-	path = EventsLog
-	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_eventslog.git
 	branch = develop/master
 [submodule "InteractBase"]
 	path = InteractBase
@@ -68,33 +83,18 @@
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_interaction_lib.git
 	branch = develop/master
 [submodule "Account"]
-	path = Account
-	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_account.git
-	branch = develop/master
+    path = Account
+    url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_account.git
+    branch = develop/master
 [submodule "Main"]
 	path = Main
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_main.git
 	branch = develop/master
-[submodule "RobotPen"]
-	path = RobotPen
-	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_robot_pen.git
-	branch = develop/master
-[submodule "UiBase"]
-	path = UiBase
-	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_uibase.git
-    branch = develop/master
 [submodule "Salt"]
-	path = Salt
-	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_customization.git
-	branch = develop/master
-[submodule "TalWeb"]
-	path = TalWeb
-	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_qtwidgets.git
-	branch = develop/master
-[submodule "Assistant"]
-	path = Assistant
-	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_assistant.git
-	branch = develop/master
+    path = Salt
+    url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_customization.git
+    branch = develop/master
+
 
 
 [submodule "XhtHtml"]

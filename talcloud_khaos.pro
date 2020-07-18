@@ -1,36 +1,51 @@
 TEMPLATE = subdirs
 
-SUBDIRS += \
-    #QtJsonSerializer/src/jsonserializer \
+GITHUB_MODULES = \
+    QtComposition \
     #qtpromise/src/qtpromise \
     log4qt \
-    UiBase \
-    #thirdparty \
-
-SUBDIRS += \
-    QtComposition \
+    #QtJsonSerializer/src/jsonserializer \
     QtEventBus \
     QtRestClient \
-    InkCanvas \
+    # thirdparty \
 
-SUBDIRS += \
-    ShowBoard \
-    Geometry \
-    TeachingTools \
-    InteractBase \
+ROBOT_MODULES = \
     RobotPen \
-    TalWeb \
-    Account \
-    Assistant/Upgrade \
-    Salt/salt/Salt.pro \
 
-SUBDIRS += \
+TAL_GITHUB_MODULES = \
+    UiBase \
+    TalWeb \
+    InkCanvas \
+    Geometry \
+    Showboard \
+    TeachingTools \
+    # docConvert
+
+TAL_BUSINESS_MODULES_BASE = \
     EventsLog \
     EventsLog\EventsLogService.pro \
+    Assistant/Upgrade \
+    Salt/salt/Salt.pro \
     TeachingLib \
+    Account \
+    Main \
+
+TAL_BUSINESS_MODULES_INTERACT = \
+    InteractBase \
     InteractionLib \
 
-SUBDIRS += \
-    Html \
-    Main \
-    #QtApp \
+TAL_H5_MODULES = \
+    XhtHtml/Html.pro \
+#    Html \
+
+
+# githubs
+SUBDIRS += $$GITHUB_MODULES
+#SUBDIRS += $$ROBOT_MODULES
+SUBDIRS += $$TAL_GITHUB_MODULES
+SUBDIRS += $$TAL_BUSINESS_MODULES_BASE
+SUBDIRS += $$TAL_H5_MODULES
+
+#prod_qxkt {
+#    SUBDIRS += $$TAL_BUSINESS_MODULES_INTERACT
+#}
