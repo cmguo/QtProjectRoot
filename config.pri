@@ -1,4 +1,7 @@
 PRODUCT_CONFIG=$$(PRODUCT_CONFIG)
+#PRODUCT_CONFIG=prod_xkt
+#PRODUCT_CONFIG=prod_qxkt
+
 CONFIG += $$PRODUCT_CONFIG
 
 OUTPUT_DIR=$$(OUTPUT_DIR)
@@ -8,6 +11,10 @@ isEmpty(OUTPUT_DIR) {
 } else {
     CONFIG(release, debug|release): DESTDIR = $$OUTPUT_DIR/release
     CONFIG(debug, debug|release): DESTDIR = $$OUTPUT_DIR/debug
+}
+
+CONFIG(prod_xkt, prod_xkt|prod_qxkt) {
+    DEFINES += ENABLE_PRAISE
 }
 
 LIBS += -L$$DESTDIR
