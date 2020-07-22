@@ -17,6 +17,11 @@ CONFIG(prod_xkt, prod_xkt|prod_qxkt) {
     DEFINES += ENABLE_PRAISE
 }
 
+CONFIG(prod_qxkt, prod_xkt|prod_qxkt) {
+    DEFINES += ENABLE_TICKET_REFRESH
+}
+
+
 LIBS += -L$$DESTDIR
 
 # special rules for visual studio
