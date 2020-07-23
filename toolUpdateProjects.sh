@@ -70,7 +70,7 @@ if [ "$updateGithubs" == "y" ]; then
     done
 fi
 
-PROJECTS="Showboard Geometry InkCanvas TeachingTools TeachingLib EventsLog InteractBase InteractionLib Account Main RobotPen UiBase Salt TalWeb Assistant"
+PROJECTS="ShowBoard Geometry InkCanvas TeachingTools TeachingLib EventsLog InteractBase InteractionLib Account Main RobotPen UiBase Salt TalWeb Assistant"
 echo "Updating tal projects ($PROJECTS)"
 echo
 for g in $PROJECTS
