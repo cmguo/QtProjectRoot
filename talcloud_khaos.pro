@@ -16,7 +16,7 @@ SUBDIRS += \
 SUBDIRS += \
     InkCanvas \
     Geometry \
-    Showboard \
+    ShowBoard \
     TeachingTools \
 
 SUBDIRS += \
