@@ -109,7 +109,7 @@ do
     cd $g
     echo "Entering $(pwd)"
     git fetch
-    git checkout feature/1.0
+    git checkout feature/730
     git pull --rebase
     cd ..
     echo
