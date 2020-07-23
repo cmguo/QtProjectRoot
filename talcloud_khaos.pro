@@ -2,12 +2,12 @@ TEMPLATE = subdirs
 
 GITHUB_MODULES = \
     QtComposition \
-    #qtpromise/src/qtpromise \
+    #qtpromise \
     log4qt \
-    #QtJsonSerializer/src/jsonserializer \
+    #QtJsonSerializer \
     QtEventBus \
     QtRestClient \
-    # thirdparty \
+    thirdparty \
 
 ROBOT_MODULES = \
     RobotPen \
@@ -45,6 +45,7 @@ SUBDIRS += $$GITHUB_MODULES
 SUBDIRS += $$TAL_GITHUB_MODULES
 SUBDIRS += $$TAL_BUSINESS_MODULES_BASE
 SUBDIRS += $$TAL_H5_MODULES
+#SUBDIRS += QtApp
 
 #prod_qxkt {
 #    SUBDIRS += $$TAL_BUSINESS_MODULES_INTERACT
