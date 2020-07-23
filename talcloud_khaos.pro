@@ -10,9 +10,6 @@ SUBDIRS += \
     thirdparty \
 
 SUBDIRS += \
-    RobotPen \
-
-SUBDIRS += \
     UiBase \
     InteractBase \
     TalWeb \
