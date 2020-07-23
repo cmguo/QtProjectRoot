@@ -58,8 +58,8 @@
 	path = RobotPen
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_robot_pen.git
 	branch = develop/master
-[submodule "Showboard"]
-	path = Showboard
+[submodule "ShowBoard"]
+	path = ShowBoard
 	url = git@git.100tal.com:zhihuijiaoyu_solution/talcloud_khaos_show_board.git
 	branch = develop/master
 [submodule "Geometry"]
