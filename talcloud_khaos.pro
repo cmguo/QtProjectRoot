@@ -11,7 +11,6 @@ SUBDIRS += \
 
 SUBDIRS += \
     UiBase \
-    InteractBase \
     TalWeb \
 
 SUBDIRS += \
@@ -28,21 +27,19 @@ SUBDIRS += \
 SUBDIRS += \
     Salt/salt/Salt.pro \
     TeachingLib \
-    InteractionLib \
     Account \
     Main \
 
 SUBDIRS += \
     XhtHtml/Html.pro \
-    Html \
-    RobotPen \
+#    Html \
     # docConvert \
 
 #SUBDIRS += QtApp
 
-prod_xkt {
-    SUBDIRS -= \
-        RobotPen \
-        InteractBase \
-        InteractionLib \
-}
+#prod_xkt {
+#    SUBDIRS -= \
+#        RobotPen \
+#        InteractBase \
+#        InteractionLib \
+#}
