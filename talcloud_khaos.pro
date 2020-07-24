@@ -1,5 +1,7 @@
 TEMPLATE = subdirs
 
+include($$PWD/config.pri)
+
 SUBDIRS += \
     QtComposition \
     #qtpromise \
