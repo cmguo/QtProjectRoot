@@ -105,4 +105,4 @@
 [submodule "Html"]
     path = Html
     url = git@git.100tal.com:zhihuijiaoyu_solution/seg-iclass-plugin-fe.git
-    branch = feature/1.8
+    branch = feature/1.8.1
