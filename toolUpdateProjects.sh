@@ -57,6 +57,8 @@ do
               echo "Done"
               echo
               echo
+              TargetPath=""
+              TargetBranch=""
         fi
 
 done
