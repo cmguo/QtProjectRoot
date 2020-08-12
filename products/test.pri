@@ -1,0 +1,1 @@
+DEFINES += PROD_TEST
