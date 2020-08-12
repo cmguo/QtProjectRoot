@@ -22,6 +22,10 @@
 	path = QtRestClient
 	url = https://github.com/cmguo/QtRestClient.git
 	branch = master
+[submodule "QtTestbed"]
+	path = QtTestbed
+	url = https://github.com/cmguo/QtTestbed.git
+	branch = master
 
 
 [submodule "docCovert"]
