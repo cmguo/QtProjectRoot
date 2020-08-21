@@ -104,7 +104,6 @@ Section "MainSection" SEC01
     ;注册表写路径
   WriteRegStr HKCU "Software\${PRODUCT_NAME}" "" $INSTDIR
 
-   Call CheckFlash
 SectionEnd
 
 Section -AdditionalIcons
@@ -188,15 +187,7 @@ SectionEnd
 
 ;############################ 安装过程函数定义 ############################
 
-; Flash是否安装检测
-Function CheckFlash
-    ClearErrors
-    ReadRegStr $0 HKLM "SOFTWARE\Macromedia\FlashPlayerPepper" "Version"
-    IfErrors 0 ExitCheckFlash
-    ExecWait "$INSTDIR\Flash.exe" $0
-    ExitCheckFlash:
-        Quit
-FunctionEnd
+
 
 ; 协议链接点击处理函数
 Function OnLinkAgreementClick
