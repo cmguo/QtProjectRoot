@@ -59,7 +59,7 @@ RequestExecutionLevel admin
 
 ;############################ 安装文件定义 ############################
 Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-OutFile ".\exe\setup.exe"
+OutFile "${BUILD_DIR}\${EXE_NAME}"
 InstallDir "${PROGRAM_FILES_DIR}\${PRODUCT_NAME_EN}"
 InstallDirRegKey HKLM "${PRODUCT_UNINST_KEY}" "UninstallString"
 ;
