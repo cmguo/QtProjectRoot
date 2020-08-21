@@ -50,16 +50,18 @@ RequestExecutionLevel admin
 !insertmacro MUI_LANGUAGE "SimpChinese"
 
 
+!ifdef x64
+    !define PROGRAM_FILES_DIR  $PROGRAMFILES64
+!else
+    !define PROGRAM_FILES_DIR  $PROGRAMFILES
+!endif
+
+
 ;############################ 安装文件定义 ############################
 Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-
-
-
-OutFile "${BUILD_DIR}\${EXE_NAME}"
-InstallDir "$PROGRAMFILES\${PRODUCT_NAME_EN}"
+OutFile ".\exe\setup.exe"
+InstallDir "${PROGRAM_FILES_DIR}\${PRODUCT_NAME_EN}"
 InstallDirRegKey HKLM "${PRODUCT_UNINST_KEY}" "UninstallString"
-;
-InstallDirRegKey HKCU "Software\${PRODUCT_NAME}" ""
 ;
 ShowInstDetails show
 ShowUnInstDetails show
