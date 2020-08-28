@@ -30,8 +30,8 @@ RequestExecutionLevel admin
 !define PRODUCT_NAME "Ïþ¿ÎÌÃ"
 !define PRODUCT_PUBLISHER "prod_xkt"
 !define PRODUCT_NAME_EN  "prod_xkt"
-!define MUI_ICON ".\deploy\logo.ico"
-!define MUI_UNICON ".\deploy\logo.ico"
+!define MUI_ICON ".\deploy\logo.png"
+!define MUI_UNICON ".\deploy\logo.png"
 
 
 
