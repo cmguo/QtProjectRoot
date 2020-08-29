@@ -103,6 +103,9 @@ Section "MainSection" SEC01
   
     ;注册表写路径
   WriteRegStr HKCU "Software\${PRODUCT_NAME}" "" $INSTDIR
+  ; 删除指定缓存目录
+  	RMDir /r /REBOOTOK "$LOCALAPPDATA\xktclass\cache"
+	RMDir /r /REBOOTOK "$LOCALAPPDATA\xktclass\upgrade"
 
 SectionEnd
 
