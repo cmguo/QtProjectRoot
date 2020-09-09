@@ -54,9 +54,11 @@ SUBDIRS += \
     TeachingLib \
     Account \
     Main \
+    Guide \
 
 
 Upgrade.subdir = Assistant/Upgrade
+Guide.subdir = Assistant/Guide
 EventsLogService.file = EventsLog\EventsLogService.pro
 
 EventsLog.depends = QtComposition QtRestClient
@@ -66,10 +68,11 @@ Geometry.depends = QtComposition ShowBoard
 ShowBoard.depends = QtComposition QtEventBus
 Upgrade.depends = QtComposition QtRestClient
 Account.depends = QtComposition QtRestClient QtEventBus UiBase TalWeb EventsLog log4qt TalWeb UiBase
-TeachingTools.depends = QtComposition QtEventBus InkCanvas ShowBoard
-TeachingLib.depends = QtComposition QtRestClient QtEventBus UiBase EventsLog TalWeb XhtHtml/Html.pro Geometry ShowBoard  Account TeachingTools InkCanvas
-Main.depends = QtComposition QtRestClient QtEventBus InkCanvas UiBase EventsLog TalWeb XhtHtml/Html.pro Geometry ShowBoard Account TeachingLib TeachingTools Salt/salt/Salt.pro Upgrade
-
+TeachingTools.depends = QtComposition QtEventBus InkCanvas ShowBoard UiBase Guide
+TeachingLib.depends = QtComposition QtRestClient QtEventBus UiBase EventsLog TalWeb XhtHtml/Html.pro \
+    Geometry ShowBoard  Account TeachingTools InkCanvas Guide
+Main.depends = QtComposition QtRestClient QtEventBus InkCanvas UiBase EventsLog TalWeb XhtHtml/Html.pro \
+    Geometry ShowBoard Account TeachingLib TeachingTools Salt/salt/Salt.pro Upgrade Guide
 
 
 
