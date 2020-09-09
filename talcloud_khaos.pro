@@ -73,11 +73,4 @@ TeachingLib.depends = QtComposition QtRestClient QtEventBus UiBase EventsLog Tal
     Geometry ShowBoard  Account TeachingTools InkCanvas Guide
 Main.depends = QtComposition QtRestClient QtEventBus InkCanvas UiBase EventsLog TalWeb XhtHtml/Html.pro \
     Geometry ShowBoard Account TeachingLib TeachingTools Salt/salt/Salt.pro Upgrade Guide
-
-
-
-
-
-
-
-
+Guide.depends = QtEventBus UiBase
