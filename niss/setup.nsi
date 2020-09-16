@@ -557,9 +557,11 @@ Function CreateMutex
 FunctionEnd
 
 Function .onInit
-
+	${For} $R1 1 4
 	FindProcDLL::FindProc "interactionclass.exe"
     IntCmp $R0 1 0 no_run
+	Sleep 1000
+	${Next}
     MessageBox MB_ICONSTOP "安装程序检测到 ${PRODUCT_NAME} 正在运行，请关闭之后再安装！"
     Quit
 	no_run:
