@@ -104,7 +104,7 @@
 [submodule "XhtHtml"]
 	path = XhtHtml
 	url = git@git.100tal.com:epg_xhb_solution/epg_iclass_plugin_fe.git
-    branch = feature/915
+    branch = feature/930
 
 [submodule "Html"]
     path = Html
