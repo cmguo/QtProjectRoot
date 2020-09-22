@@ -84,7 +84,8 @@ UninstPage   instfiles	""	un.MyUninstallNow
 
 Section "MainSection" SEC01
   SetOutPath "$INSTDIR"
-  SetOverwrite ifnewer
+  ; 强制覆盖文件
+  SetOverwrite on
   
   
   File /r ${PRODUCT_FILES}
