@@ -62,6 +62,7 @@ Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
 OutFile "${BUILD_DIR}\${EXE_NAME}"
 InstallDir "${PROGRAM_FILES_DIR}\${PRODUCT_NAME_EN}"
 InstallDirRegKey HKLM "${PRODUCT_UNINST_KEY}" "UninstallString"
+InstallDirRegKey HKCU "Software\${PRODUCT_NAME}" ""
 ;
 ShowInstDetails show
 ShowUnInstDetails show
