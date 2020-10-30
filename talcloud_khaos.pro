@@ -67,8 +67,9 @@ TalWeb.depends = EventsLog UiBase
 Geometry.depends = QtComposition ShowBoard
 ShowBoard.depends = QtComposition QtEventBus
 Upgrade.depends = QtComposition QtRestClient
-Account.depends = QtComposition QtRestClient QtEventBus UiBase TalWeb EventsLog log4qt TalWeb UiBase
-TeachingTools.depends = QtComposition QtEventBus InkCanvas ShowBoard UiBase Guide
+Account.depends = QtComposition QtRestClient QtEventBus UiBase TalWeb EventsLog log4qt TalWeb UiBase \
+    XhtHtml/Html.pro
+TeachingTools.depends = QtComposition QtEventBus InkCanvas ShowBoard UiBase Guide Geometry
 TeachingLib.depends = QtComposition QtRestClient QtEventBus UiBase EventsLog TalWeb XhtHtml/Html.pro \
     Geometry ShowBoard  Account TeachingTools InkCanvas Guide
 Main.depends = QtComposition QtRestClient QtEventBus InkCanvas UiBase EventsLog TalWeb XhtHtml/Html.pro \
