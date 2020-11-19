@@ -98,7 +98,10 @@
     path = Salt
     url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_customization
     branch = develop/master
-
+[submodule "nsis"]
+	path = nsis
+	url = git@git.100tal.com:epg_xhb_solution/talcloud_khaos_exe_packager.git
+	branch = develop/master
 
 
 [submodule "XhtHtml"]
@@ -110,3 +113,4 @@
     path = Html
     url = git@git.100tal.com:zhihuijiaoyu_solution/seg-iclass-plugin-fe.git
     branch = feature/1.8.1
+
