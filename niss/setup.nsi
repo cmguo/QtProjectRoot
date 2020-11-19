@@ -99,7 +99,8 @@ Section "MainSection" SEC01
 	${GetSize} "$INSTDIR" "/S=0K" $0 $1 $2
 	IntFmt $0 "0x%08X" $0
 	WriteRegDWORD HKLM "${Unstall_KeyPath}${PRODUCT_NAME_EN}" "EstimatedSize" "$0"
-
+	; 开启启动
+	WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Run" iclass $INSTDIR\interactionclass.exe
 	;注册表写路径
 	WriteRegStr HKCU "Software\${PRODUCT_NAME}" "" $INSTDIR
 	; 删除指定缓存目录
@@ -315,7 +316,6 @@ Function MyPage
  	ShowWindow $HWNDPARENT ${SW_HIDE}
 	${NSW_SetWindowSize} $HWNDPARENT 0 0 ;改变自定义窗体大小
 
-
 	;/////初始化窗口/////
 	setupdll::InitWindow /NOUNLOAD "$PLUGINSDIR"
 	Pop $Dialog
@@ -377,7 +377,7 @@ Function MyPage
 		setupdll::BindControlAndNSISScript /NOUNLOAD "btn_choose_previous" $0
 	${EndIf}
 
-  setupdll::FindChildByName /NOUNLOAD "btn_choose_changedir"
+   setupdll::FindChildByName /NOUNLOAD "btn_choose_changedir"
 	Pop $0
 	${If} $0 == "-1"
 		MessageBox MB_OK ERROR_MESSAGE
@@ -468,14 +468,14 @@ Function MyPage
 		setupdll::BindControlAndNSISScript /NOUNLOAD "btn_close_finish" $0
 	${EndIf}
 	
-				setupdll::FindChildByName /NOUNLOAD "btn_close_unchoose"
-	Pop $0
-	${If} $0 == "-1"
-		MessageBox MB_OK ERROR_MESSAGE
-	${Else}
-		GetFunctionAddress $0 OnClose
-		setupdll::BindControlAndNSISScript /NOUNLOAD "btn_close_unchoose" $0
-	${EndIf}
+	;setupdll::FindChildByName /NOUNLOAD "btn_close_unchoose"
+	;Pop $0
+	;${If} $0 == "-1"
+	;	MessageBox MB_OK ERROR_MESSAGE
+	;${Else}
+	;	GetFunctionAddress $0 OnClose
+	;	setupdll::BindControlAndNSISScript /NOUNLOAD "btn_close_unchoose" $0
+	;${EndIf}
 	
 					setupdll::FindChildByName /NOUNLOAD "btn_close_unfinish"
 	Pop $0
