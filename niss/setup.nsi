@@ -84,35 +84,32 @@ UninstPage   instfiles	""	un.MyUninstallNow
 
 
 Section "MainSection" SEC01
-  SetOutPath "$INSTDIR"
-  ; 强制覆盖文件
-  SetOverwrite on
-  
-  
-  File /r ${PRODUCT_FILES}
-
+	SetOutPath "$INSTDIR"
+	; 强制覆盖文件
+	SetOverwrite on
+	File /r ${PRODUCT_FILES}
 	SetShellVarContext all
 	;创建开始菜单内容
- 	CreateDirectory "$SMPROGRAMS\${PRODUCT_NAME}"
-  CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME}.lnk" "$INSTDIR\${PRODUCT_MAIN_EXE}"
+	CreateDirectory "$SMPROGRAMS\${PRODUCT_NAME}"
+	CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME}.lnk" "$INSTDIR\${PRODUCT_MAIN_EXE}"
 	;创建桌面快捷方式
 	CreateShortCut "$DESKTOP\${PRODUCT_NAME}.lnk" "$INSTDIR\${PRODUCT_MAIN_EXE}"
-	
+
 	;计算程序大小，并写入注册表
 	${GetSize} "$INSTDIR" "/S=0K" $0 $1 $2
- 	IntFmt $0 "0x%08X" $0
-  WriteRegDWORD HKLM "${Unstall_KeyPath}${PRODUCT_NAME_EN}" "EstimatedSize" "$0"
-  
-    ;注册表写路径
-  WriteRegStr HKCU "Software\${PRODUCT_NAME}" "" $INSTDIR
-  ; 删除指定缓存目录
-  	RMDir /r /REBOOTOK "$LOCALAPPDATA\xktclass\cache"
+	IntFmt $0 "0x%08X" $0
+	WriteRegDWORD HKLM "${Unstall_KeyPath}${PRODUCT_NAME_EN}" "EstimatedSize" "$0"
+
+	;注册表写路径
+	WriteRegStr HKCU "Software\${PRODUCT_NAME}" "" $INSTDIR
+	; 删除指定缓存目录
+	RMDir /r /REBOOTOK "$LOCALAPPDATA\xktclass\cache"
 	RMDir /r /REBOOTOK "$LOCALAPPDATA\xktclass\upgrade"
 
 SectionEnd
 
 Section -AdditionalIcons
-	;公司官网链接
+  ;公司官网链接
   ;WriteIniStr "$INSTDIR\${PRODUCT_NAME}.url" "InternetShortcut" "URL" "${PRODUCT_WEB_SITE}"
   ;开始菜单-公司官网链接
   ;CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\Website.lnk" "$INSTDIR\${PRODUCT_NAME}.url"
@@ -226,21 +223,21 @@ FunctionEnd
 
 ;变更路径
 Function OnChangePathClick
-		;打开文件对话框
-		setupdll::NSISOpenFolderDialog /NOUNLOAD "请选择安装目录"
-		Pop $0
-		
-		${If} $0 == "-1"
-		${Else}
-      StrCpy $INSTDIR "$0\${PRODUCT_NAME_EN}"
-      ;可用磁盘空间
-			${GetRoot} $INSTDIR $1
-			${DriveSpace} $1 "/D=F /S=M" $2
-			setupdll::NSISScriptSendMessage /NOUNLOAD $Dialog "WM_SJTHREEUPDATEFREESPACE" "$2"
-			;软件所需空间大小
-			setupdll::NSISScriptSendMessage /NOUNLOAD $Dialog "WM_SJTHREEUPDATEREQUIREDSPACE" "${REQUIRED_SPACE}"
-			;默认安装路径
-			setupdll::SetControlProperties /NOUNLOAD "SEdit" "edit_choose_url" "text" $INSTDIR
+	;打开文件对话框
+	setupdll::NSISOpenFolderDialog /NOUNLOAD "请选择安装目录"
+	Pop $0
+	
+	${If} $0 == "-1"
+	${Else}
+		StrCpy $INSTDIR "$0\${PRODUCT_NAME_EN}"
+		;可用磁盘空间
+		${GetRoot} $INSTDIR $1
+		${DriveSpace} $1 "/D=F /S=M" $2
+		setupdll::NSISScriptSendMessage /NOUNLOAD $Dialog "WM_SJTHREEUPDATEFREESPACE" "$2"
+		;软件所需空间大小
+		setupdll::NSISScriptSendMessage /NOUNLOAD $Dialog "WM_SJTHREEUPDATEREQUIREDSPACE" "${REQUIRED_SPACE}"
+		;默认安装路径
+		setupdll::SetControlProperties /NOUNLOAD "SEdit" "edit_choose_url" "text" $INSTDIR
    ${EndIf}
 FunctionEnd
 
@@ -389,7 +386,7 @@ Function MyPage
 		setupdll::BindControlAndNSISScript /NOUNLOAD "btn_choose_changedir" $0
 	${EndIf}
 	
-  setupdll::FindChildByName /NOUNLOAD "edit_choose_url"
+    setupdll::FindChildByName /NOUNLOAD "edit_choose_url"
 	Pop $0
 	${If} $0 == "-1"
 		MessageBox MB_OK ERROR_MESSAGE
@@ -398,7 +395,7 @@ Function MyPage
 		setupdll::BindControlAndNSISScript /NOUNLOAD "edit_choose_url" $0
 	${EndIf}
 
- setupdll::FindChildByName /NOUNLOAD "btn_choose_install"
+	setupdll::FindChildByName /NOUNLOAD "btn_choose_install"
 	Pop $0
 	${If} $0 == "-1"
 		MessageBox MB_OK ERROR_MESSAGE
@@ -698,31 +695,33 @@ Function un.MyUninstallPage
 	setupdll::FindChildByName /NOUNLOAD "btn_unstallstart_next"
 	Pop $0
 	${If} $0 == "-1"
-		MessageBox MB_OK ERROR_MESSAGE
+		MessageBox MB_OK btn_unstallstart_next
 	${Else}
 		GetFunctionAddress $0 un.OnBtnNextClick
 		setupdll::BindControlAndNSISScript /NOUNLOAD "btn_unstallstart_next" $0
 	${EndIf}
+	
 	setupdll::FindChildByName /NOUNLOAD "btn_unstallchoose_previous"
 	Pop $0
 	${If} $0 == "-1"
-		MessageBox MB_OK ERROR_MESSAGE
+		MessageBox MB_OK btn_unstallchoose_previous
 	${Else}
 		GetFunctionAddress $0 un.OnBtnCancellClick
 		setupdll::BindControlAndNSISScript /NOUNLOAD "btn_unstallchoose_previous" $0
 	${EndIf}
 	;/////第二页面/////
 	;取消按钮
-	setupdll::FindChildByName /NOUNLOAD "btn_unstallchoose_previous2"
-	Pop $0
-	${If} $0 == "-1"
-		MessageBox MB_OK ERROR_MESSAGE
-	${Else}
-		GetFunctionAddress $0 un.OnBtnCancellClick
-		setupdll::BindControlAndNSISScript /NOUNLOAD "btn_unstallchoose_previous2" $0
-	${EndIf}
+	;setupdll::FindChildByName /NOUNLOAD "btn_unstallchoose_previous2"
+	;Pop $0
+	;${If} $0 == "-1"
+	;	MessageBox MB_OK ERROR_MESSAGE
+	;${Else}
+	;	GetFunctionAddress $0 un.OnBtnCancellClick
+	;	setupdll::BindControlAndNSISScript /NOUNLOAD "btn_unstallchoose_previous2" $0
+	;${EndIf}
+	
 	;卸载按钮
-		setupdll::FindChildByName /NOUNLOAD "btn_unstallchoose_unnstall"
+	setupdll::FindChildByName /NOUNLOAD "btn_unstallchoose_unnstall"
 	Pop $0
 	${If} $0 == "-1"
 		MessageBox MB_OK ERROR_MESSAGE
@@ -730,6 +729,7 @@ Function un.MyUninstallPage
 		GetFunctionAddress $0 un.OnUnstallClick
 		setupdll::BindControlAndNSISScript /NOUNLOAD "btn_unstallchoose_unnstall" $0
 	${EndIf}
+	
 	;////最后一个页面/////
 	;完成按钮
 	setupdll::FindChildByName /NOUNLOAD "btn_unstallfinish"
@@ -742,9 +742,9 @@ Function un.MyUninstallPage
 	${EndIf}
 	
 	;获取要卸载的目录
-	ReadRegStr $0 HKLM "${Unstall_KeyPath}${PRODUCT_NAME_EN}" "InstallLocation"
-  ;显示卸载的目录
-	setupdll::SetControlProperties /NOUNLOAD "SEdit" "edit_unstallchoose_url" "text" "$0"
+	;ReadRegStr $0 HKLM "${Unstall_KeyPath}${PRODUCT_NAME_EN}" "InstallLocation"
+    ;显示卸载的目录
+	;setupdll::SetControlProperties /NOUNLOAD "SEdit" "edit_unstallchoose_url" "text" "$0"
 
 	;/////显示窗口/////
 	setupdll::ShowPage /NOUNLOAD
