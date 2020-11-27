@@ -31,83 +31,83 @@
 [submodule "docCovert"]
     path = docCovert
     url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_doc_convert
-    branch = develop
+    branch = release/1130
 [submodule "thirdparty"]
 	path = thirdparty
 	url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_thirdparty
-	branch = develop
+	branch = release/1130
 
 
 [submodule "UiBase"]
 	path = UiBase
 	url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_uibase
-    branch = develop/master
+    branch = release/1130
 [submodule "TalWeb"]
     path = TalWeb
     url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_qtwidgets
-    branch = develop/master
+    branch = release/1130
 [submodule "InkCanvas"]
 	path = InkCanvas
 	url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_inkcanvas
-	branch = develop/master
+	branch = release/1130
 [submodule "EventsLog"]
     path = EventsLog
     url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_eventslog
-    branch = develop/master
+    branch = release/1130
 [submodule "Assistant"]
 	path = Assistant
 	url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_assistant
-	branch = develop/master
+	branch = release/1130
 [submodule "RobotPen"]
 	path = RobotPen
 	url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_robot_pen
-	branch = develop/master
+	branch = release/1130
 [submodule "ShowBoard"]
 	path = ShowBoard
 	url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_show_board
-	branch = develop/master
+	branch = release/1130
 [submodule "Geometry"]
 	path = Geometry
 	url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_geometry
-	branch = develop/master
+	branch = release/1130
 [submodule "TeachingLib"]
     path = TeachingLib
     url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_teaching
-    branch = develop/master
+    branch = release/1130
 [submodule "TeachingTools"]
 	path = TeachingTools
 	url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_teachingtools
-	branch = develop/master
+	branch = release/1130
 [submodule "InteractBase"]
 	path = InteractBase
 	url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_interact_base
-	branch = develop/master
+	branch = release/1130
 [submodule "InteractionLib"]
 	path = InteractionLib
 	url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_interaction_lib
-	branch = develop/master
+	branch = release/1130
 [submodule "Account"]
     path = Account
     url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_account
-    branch = develop/master
+    branch = release/1130
 [submodule "Main"]
 	path = Main
 	url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_main
-	branch = develop/master
+	branch = release/1130
 [submodule "Salt"]
     path = Salt
     url = ssh://gerrit.talcloud.com:29418/talcloud_khaos_customization
-    branch = develop/master
+    branch = release/1130
 [submodule "nsis"]
 	path = nsis
 	url = git@git.100tal.com:epg_xhb_solution/talcloud_khaos_exe_packager.git
-	branch = develop/master
+	branch = release/1130
 
 
 [submodule "XhtHtml"]
 	path = XhtHtml
 	url = git@git.100tal.com:epg_xhb_solution/epg_iclass_plugin_fe.git
-    branch = feature/20201130
+    branch = release/1130
 
 [submodule "Html"]
     path = Html
