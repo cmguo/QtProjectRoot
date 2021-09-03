@@ -59,7 +59,7 @@ SUBDIRS += \
 
 Upgrade.subdir = Assistant/Upgrade
 Guide.subdir = Assistant/Guide
-EventsLogService.file = EventsLog\EventsLogService.pro
+EventsLogService.file = EventsLog/EventsLogService.pro
 
 EventsLog.depends = QtComposition QtRestClient
 EventsLogService.depends = QtComposition QtRestClient EventsLog
