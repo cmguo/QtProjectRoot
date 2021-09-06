@@ -1,7 +1,3 @@
-[submodule "QtComposition"]
-	path = QtComposition
-	url = https://github.com/cmguo/QtComposition.git
-	branch = master
 [submodule "qtpromise"]
 	path = qtpromise
 	url = https://github.com/cmguo/qtpromise.git
@@ -13,6 +9,19 @@
 [submodule "QtJsonSerializer"]
 	path = QtJsonSerializer
 	url = https://github.com/cmguo/QtJsonSerializer.git
+	branch = master
+[submodule "quazip"]
+	path = quazip
+	url = git@github.com:cmguo/quazip.git
+	branch = master
+[submodule "qthttpserver"]
+	path = qthttpserver
+	url = git@github.com:cmguo/qthttpserver.git
+	branch = master
+
+[submodule "QtComposition"]
+	path = QtComposition
+	url = https://github.com/cmguo/QtComposition.git
 	branch = master
 [submodule "QtEventBus"]
 	path = QtEventBus
@@ -27,28 +36,35 @@
 	url = https://github.com/cmguo/QtTestbed.git
 	branch = master
 
-
-[submodule "docCovert"]
-	path = docCovert
-	url = ../talcloud_khaos_doc_convert.git
-	branch = develop
-[submodule "thirdparty"]
-	path = thirdparty
-	url = ../talcloud_khaos_thirdparty.git
-	branch = develop
-
-
+[submodule "InkCanvas"]
+	path = InkCanvas
+	url = ../talcloud_khaos_inkcanvas.git
+	branch = develop/master
+[submodule "ShowBoard"]
+	path = ShowBoard
+	url = ../talcloud_khaos_show_board.git
+	branch = develop/master
+[submodule "Geometry"]
+	path = Geometry
+	url = ../talcloud_khaos_geometry.git
+	branch = develop/master
+[submodule "TeachingTools"]
+	path = TeachingTools
+	url = ../talcloud_khaos_teachingtools.git
+	branch = develop/master
 [submodule "UiBase"]
 	path = UiBase
 	url = ../talcloud_khaos_uibase.git
 	branch = develop/master
+[submodule "InteractBase"]
+	path = InteractBase
+	url = ../talcloud_khaos_interact_base.git
+	branch = develop/master
+
+
 [submodule "TalWeb"]
 	path = TalWeb
 	url = ../talcloud_khaos_qtwidgets.git
-	branch = develop/master
-[submodule "InkCanvas"]
-	path = InkCanvas
-	url = ../talcloud_khaos_inkcanvas.git
 	branch = develop/master
 [submodule "EventsLog"]
 	path = EventsLog
@@ -62,25 +78,9 @@
 	path = RobotPen
 	url = ../talcloud_khaos_robot_pen.git
 	branch = develop/master
-[submodule "ShowBoard"]
-	path = ShowBoard
-	url = ../talcloud_khaos_show_board.git
-	branch = develop/master
-[submodule "Geometry"]
-	path = Geometry
-	url = ../talcloud_khaos_geometry.git
-	branch = develop/master
 [submodule "TeachingLib"]
 	path = TeachingLib
 	url = ../talcloud_khaos_teaching.git
-	branch = develop/master
-[submodule "TeachingTools"]
-	path = TeachingTools
-	url = ../talcloud_khaos_teachingtools.git
-	branch = develop/master
-[submodule "InteractBase"]
-	path = InteractBase
-	url = ../talcloud_khaos_interact_base.git
 	branch = develop/master
 [submodule "InteractionLib"]
 	path = InteractionLib
@@ -90,27 +90,51 @@
 	path = Account
 	url = ../talcloud_khaos_account.git
 	branch = develop/master
-[submodule "Main"]
-	path = Main
-	url = ../talcloud_khaos_main.git
-	branch = develop/master
-[submodule "Salt"]
-	path = Salt
-	url = ../talcloud_khaos_customization.git
-	branch = develop/master
-[submodule "nsis"]
-	path = nsis
-	url = ../talcloud_khaos_exe_packager.git
-	branch = develop/master
 
 
 [submodule "XhtHtml"]
 	path = XhtHtml
 	url = ../epg_iclass_plugin_fe.git
 	branch = feature/20201130
-
 [submodule "Html"]
 	path = Html
 	url = ../seg-iclass-plugin-fe.git
 	branch = feature/1.8.1
 
+[submodule "docCovert"]
+	path = docCovert
+	url = ../talcloud_khaos_doc_convert.git
+	branch = develop
+[submodule "thirdparty"]
+	path = thirdparty
+	url = ../talcloud_khaos_thirdparty.git
+	branch = develop
+[submodule "Salt"]
+	path = Salt
+	url = ../talcloud_khaos_customization.git
+	branch = develop/master
+
+[submodule "Main"]
+	path = Main
+	url = ../talcloud_khaos_main.git
+	branch = develop/master
+[submodule "nsis"]
+	path = nsis
+	url = ../talcloud_khaos_exe_packager.git
+	branch = develop/master
+[submodule "MultiMedia"]
+	path = MultiMedia
+	url = ../talcloud_khaos_multimedia.git
+	branch = develop/master
+[submodule "PageBox"]
+	path = PageBox
+	url = ../talcloud_khaos_pagebox.git
+	branch = develop/master
+[submodule "QtApp"]
+	path = QtApp
+	url = git@github.com:cmguo/QtApp.git
+	branch = master
+[submodule "resource"]
+	path = resource
+	url = git@github.com:cmguo/QtApp-resources.git
+	branch = master

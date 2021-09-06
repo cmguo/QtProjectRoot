@@ -23,11 +23,15 @@ TEMPLATE = subdirs
 include($$PWD/config.pri)
 
 SUBDIRS += \
-    thirdparty \
-    QtComposition \
+#    thirdparty \
+    QtJsonSerializer \
+    qthttpserver \
+#    quazip \
     #qtpromise \
-    #QtJsonSerializer \
     log4qt \
+
+SUBDIRS += \
+    QtComposition \
     QtEventBus \
     QtRestClient \
     InkCanvas \
@@ -35,27 +39,28 @@ SUBDIRS += \
 QtEventBus.depends = QtComposition
 QtRestClient.depends = log4qt
 
-
-
 SUBDIRS += \
-    XhtHtml/Html.pro \
-    Salt/salt/Salt.pro \
+#    TalWeb \
     UiBase \
-
-SUBDIRS += \
-    EventsLog \
-#    EventsLog\EventsLogService.pro \
-    EventsLogService \
-    TalWeb \
     Geometry \
     ShowBoard \
-    Upgrade \
     TeachingTools \
-    TeachingLib \
-    Account \
-    Main \
-    Guide \
 
+#SUBDIRS += \
+#    XhtHtml/Html.pro \
+#    Salt/salt/Salt.pro \
+
+SUBDIRS += \
+#    EventsLog \
+    #    EventsLog\EventsLogService.pro \
+#    EventsLogService \
+#    Upgrade \
+#    TeachingLib \
+#    Account \
+#    Main \
+#    Guide \
+
+SUBDIRS += QtApp
 
 Upgrade.subdir = Assistant/Upgrade
 Guide.subdir = Assistant/Guide
@@ -69,9 +74,14 @@ ShowBoard.depends = QtComposition QtEventBus
 Upgrade.depends = QtComposition QtRestClient
 Account.depends = QtComposition QtRestClient QtEventBus UiBase TalWeb EventsLog log4qt TalWeb UiBase \
     XhtHtml/Html.pro
-TeachingTools.depends = QtComposition QtEventBus InkCanvas ShowBoard UiBase Guide Geometry
+TeachingTools.depends = QtComposition QtEventBus InkCanvas ShowBoard Geometry
 TeachingLib.depends = QtComposition QtRestClient QtEventBus UiBase EventsLog TalWeb XhtHtml/Html.pro \
     Geometry ShowBoard  Account TeachingTools InkCanvas Guide
 Main.depends = QtComposition QtRestClient QtEventBus InkCanvas UiBase EventsLog TalWeb XhtHtml/Html.pro \
     Geometry ShowBoard Account TeachingLib TeachingTools Salt/salt/Salt.pro Upgrade Guide
 Guide.depends = QtEventBus UiBase
+
+QtApp.depends = QtComposition QtRestClient QtEventBus InkCanvas UiBase Geometry ShowBoard TeachingTools \
+#    EventsLog TalWeb XhtHtml/Html.pro \
+#    Account TeachingLib Salt/salt/Salt.pro Upgrade Guide
+
