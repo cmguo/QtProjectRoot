@@ -24,43 +24,44 @@ include($$PWD/config.pri)
 
 SUBDIRS += \
 #    thirdparty \
-    QtJsonSerializer \
-    qthttpserver \
-#    quazip \
-    #qtpromise \
+#    QtJsonSerializer \
+#    qthttpserver \
+    quazip \
+#    qtpromise \
     log4qt \
 
 SUBDIRS += \
     QtComposition \
     QtEventBus \
     QtRestClient \
-    InkCanvas \
+    QtTestbed \
 
 QtEventBus.depends = QtComposition
 QtRestClient.depends = log4qt
 
 SUBDIRS += \
-#    TalWeb \
-    UiBase \
-    Geometry \
+    InkCanvas \
     ShowBoard \
+    Geometry \
     TeachingTools \
+    MultiMedia \
+    PageBox \
+    InteractBase \
+    UiBase \
 
-#SUBDIRS += \
-#    XhtHtml/Html.pro \
-#    Salt/salt/Salt.pro \
+ShowBoard.depends = QtComposition QtEventBus
+Geometry.depends = ShowBoard
+MultiMedia.depends = ShowBoard
+PageBox.depends = ShowBoard
+TeachingTools.depends = InkCanvas ShowBoard
 
 SUBDIRS += \
+#    TalWeb \
 #    EventsLog \
     #    EventsLog\EventsLogService.pro \
 #    EventsLogService \
 #    Upgrade \
-#    TeachingLib \
-#    Account \
-#    Main \
-#    Guide \
-
-SUBDIRS += QtApp
+#    Salt/salt/Salt.pro \
 
 Upgrade.subdir = Assistant/Upgrade
 Guide.subdir = Assistant/Guide
@@ -69,19 +70,28 @@ EventsLogService.file = EventsLog/EventsLogService.pro
 EventsLog.depends = QtComposition QtRestClient
 EventsLogService.depends = QtComposition QtRestClient EventsLog
 TalWeb.depends = EventsLog UiBase
-Geometry.depends = QtComposition ShowBoard
-ShowBoard.depends = QtComposition QtEventBus
 Upgrade.depends = QtComposition QtRestClient
-Account.depends = QtComposition QtRestClient QtEventBus UiBase TalWeb EventsLog log4qt TalWeb UiBase \
-    XhtHtml/Html.pro
-TeachingTools.depends = QtComposition QtEventBus InkCanvas ShowBoard Geometry
-TeachingLib.depends = QtComposition QtRestClient QtEventBus UiBase EventsLog TalWeb XhtHtml/Html.pro \
-    Geometry ShowBoard  Account TeachingTools InkCanvas Guide
-Main.depends = QtComposition QtRestClient QtEventBus InkCanvas UiBase EventsLog TalWeb XhtHtml/Html.pro \
-    Geometry ShowBoard Account TeachingLib TeachingTools Salt/salt/Salt.pro Upgrade Guide
 Guide.depends = QtEventBus UiBase
 
-QtApp.depends = QtComposition QtRestClient QtEventBus InkCanvas UiBase Geometry ShowBoard TeachingTools \
+SUBDIRS += \
+#    TeachingLib \
+#    Account \
+#    Main \
+#    Guide \
+
+Account.depends = QtRestClient TalWeb EventsLog TalWeb \
+    XhtHtml/Html.pro
+TeachingLib.depends = QtRestClient Geometry PageBox TeachingTools EventsLog \
+    TalWeb Account Guide
+Main.depends = EventsLog TalWeb XhtHtml/Html.pro \
+    TeachingLib TeachingTools Salt/salt/Salt.pro Upgrade Guide
+
+#SUBDIRS += \
+#    XhtHtml/Html.pro \
+
+SUBDIRS += QtApp
+
+QtApp.depends = QtRestClient UiBase Geometry ShowBoard TeachingTools \
 #    EventsLog TalWeb XhtHtml/Html.pro \
 #    Account TeachingLib Salt/salt/Salt.pro Upgrade Guide
 

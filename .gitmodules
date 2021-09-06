@@ -61,7 +61,6 @@
 	url = ../talcloud_khaos_interact_base.git
 	branch = develop/master
 
-
 [submodule "TalWeb"]
 	path = TalWeb
 	url = ../talcloud_khaos_qtwidgets.git
@@ -78,6 +77,7 @@
 	path = RobotPen
 	url = ../talcloud_khaos_robot_pen.git
 	branch = develop/master
+
 [submodule "TeachingLib"]
 	path = TeachingLib
 	url = ../talcloud_khaos_teaching.git
@@ -90,7 +90,6 @@
 	path = Account
 	url = ../talcloud_khaos_account.git
 	branch = develop/master
-
 
 [submodule "XhtHtml"]
 	path = XhtHtml
