@@ -26,8 +26,8 @@ SUBDIRS += \
 #    thirdparty \
 #    QtJsonSerializer \
 #    qthttpserver \
-    quazip \
 #    qtpromise \
+    quazip \
     log4qt \
 
 SUBDIRS += \
