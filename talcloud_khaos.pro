@@ -23,11 +23,11 @@ TEMPLATE = subdirs
 include($$PWD/config.pri)
 
 SUBDIRS += \
-#    thirdparty \
+    thirdparty \
 #    QtJsonSerializer \
 #    qthttpserver \
 #    qtpromise \
-    quazip \
+#    quazip \
     log4qt \
 
 SUBDIRS += \
@@ -56,10 +56,10 @@ PageBox.depends = ShowBoard
 TeachingTools.depends = InkCanvas ShowBoard
 
 SUBDIRS += \
-#    TalWeb \
-#    EventsLog \
+    TalWeb \
+    EventsLog \
     #    EventsLog\EventsLogService.pro \
-#    EventsLogService \
+    EventsLogService \
 #    Upgrade \
 #    Salt/salt/Salt.pro \
 
@@ -74,7 +74,8 @@ Upgrade.depends = QtComposition QtRestClient
 Guide.depends = QtEventBus UiBase
 
 SUBDIRS += \
-#    TeachingLib \
+    InteractionLib \
+    TeachingLib \
 #    Account \
 #    Main \
 #    Guide \
