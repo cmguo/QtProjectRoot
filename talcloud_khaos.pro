@@ -75,7 +75,7 @@ Guide.depends = QtEventBus UiBase
 
 SUBDIRS += \
     InteractionLib \
-    TeachingLib \
+#    TeachingLib \
 #    Account \
 #    Main \
 #    Guide \
