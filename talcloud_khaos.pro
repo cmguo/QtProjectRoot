@@ -34,10 +34,16 @@ SUBDIRS += \
     QtComposition \
     QtEventBus \
     QtRestClient \
+    Hybridge \
+    HybridgeQt \
+    HybridgeC \
+    HybridgeJni \
     QtTestbed \
 
 QtEventBus.depends = QtComposition
 QtRestClient.depends = log4qt
+
+HybridgeJni.file = HybridgeJni/jni/HybridgeJni.pro
 
 SUBDIRS += \
     InkCanvas \
