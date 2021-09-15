@@ -44,6 +44,9 @@ QtEventBus.depends = QtComposition
 QtRestClient.depends = log4qt
 
 HybridgeJni.file = HybridgeJni/jni/HybridgeJni.pro
+HybridgeQt.depends = QtComposition Hybridge
+HybridgeC.depends = Hybridge
+HybridgeJni.depends = Hybridge
 
 SUBDIRS += \
     InkCanvas \
@@ -64,9 +67,9 @@ TeachingTools.depends = InkCanvas ShowBoard
 SUBDIRS += \
     TalWeb \
     EventsLog \
-    #    EventsLog\EventsLogService.pro \
     EventsLogService \
-#    Upgrade \
+    # Upgrade \
+    # Guide \
 #    Salt/salt/Salt.pro \
 
 Upgrade.subdir = Assistant/Upgrade
@@ -80,11 +83,12 @@ Upgrade.depends = QtComposition QtRestClient
 Guide.depends = QtEventBus UiBase
 
 SUBDIRS += \
+#    XhtHtml/Html.pro \
+#    XhtHtml/Html.pro
     InteractionLib \
 #    TeachingLib \
 #    Account \
 #    Main \
-#    Guide \
 
 Account.depends = QtRestClient TalWeb EventsLog TalWeb \
     XhtHtml/Html.pro
@@ -93,12 +97,6 @@ TeachingLib.depends = QtRestClient Geometry PageBox TeachingTools EventsLog \
 Main.depends = EventsLog TalWeb XhtHtml/Html.pro \
     TeachingLib TeachingTools Salt/salt/Salt.pro Upgrade Guide
 
-#SUBDIRS += \
-#    XhtHtml/Html.pro \
-
 SUBDIRS += QtApp
 
 QtApp.depends = QtRestClient UiBase Geometry ShowBoard TeachingTools \
-#    EventsLog TalWeb XhtHtml/Html.pro \
-#    Account TeachingLib Salt/salt/Salt.pro Upgrade Guide
-
