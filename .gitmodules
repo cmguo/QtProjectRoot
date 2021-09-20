@@ -1,14 +1,14 @@
 [submodule "qtpromise"]
 	path = qtpromise
-	url = https://github.com/cmguo/qtpromise.git
+	url = git@github.com:cmguo/qtpromise.git
 	branch = master
 [submodule "log4qt"]
 	path = log4qt
-	url = https://github.com/cmguo/log4qt.git
+	url = git@github.com:cmguo/log4qt.git
 	branch = master
 [submodule "QtJsonSerializer"]
 	path = QtJsonSerializer
-	url = https://github.com/cmguo/QtJsonSerializer.git
+	url = git@github.com:cmguo/QtJsonSerializer.git
 	branch = master
 [submodule "quazip"]
 	path = quazip
@@ -21,19 +21,19 @@
 
 [submodule "QtComposition"]
 	path = QtComposition
-	url = https://github.com/cmguo/QtComposition.git
+	url = git@github.com:cmguo/QtComposition.git
 	branch = master
 [submodule "QtEventBus"]
 	path = QtEventBus
-	url = https://github.com/cmguo/QtEventBus.git
+	url = git@github.com:cmguo/QtEventBus.git
 	branch = master
 [submodule "QtRestClient"]
 	path = QtRestClient
-	url = https://github.com/cmguo/QtRestClient.git
+	url = git@github.com:cmguo/QtRestClient.git
 	branch = master
 [submodule "QtTestbed"]
 	path = QtTestbed
-	url = https://github.com/cmguo/QtTestbed.git
+	url = git@github.com:cmguo/QtTestbed.git
 	branch = master
 
 [submodule "InkCanvas"]
@@ -140,7 +140,7 @@
 [submodule "Hybridge"]
 	path = Hybridge
 	url = git@github.com:cmguo/Hybridge.git
-	branch = master
+	branch = main
 [submodule "HybridgeC"]
 	path = HybridgeC
 	url = git@github.com:cmguo/HybridgeC.git
