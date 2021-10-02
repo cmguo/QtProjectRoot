@@ -1,159 +1,159 @@
 [submodule "qtpromise"]
 	path = qtpromise
-	url = git@github.com:cmguo/qtpromise.git
+	url = ../qtpromise.git
 	branch = master
 [submodule "log4qt"]
 	path = log4qt
-	url = git@github.com:cmguo/log4qt.git
+	url = ../log4qt.git
 	branch = master
 [submodule "QtJsonSerializer"]
 	path = QtJsonSerializer
-	url = git@github.com:cmguo/QtJsonSerializer.git
+	url = ../QtJsonSerializer.git
 	branch = master
 [submodule "quazip"]
 	path = quazip
-	url = git@github.com:cmguo/quazip.git
+	url = ../quazip.git
 	branch = master
 [submodule "qthttpserver"]
 	path = qthttpserver
-	url = git@github.com:cmguo/qthttpserver.git
+	url = ../qthttpserver.git
 	branch = master
 
 [submodule "QtComposition"]
 	path = QtComposition
-	url = git@github.com:cmguo/QtComposition.git
+	url = ../QtComposition.git
 	branch = master
 [submodule "QtEventBus"]
 	path = QtEventBus
-	url = git@github.com:cmguo/QtEventBus.git
+	url = ../QtEventBus.git
 	branch = master
 [submodule "QtRestClient"]
 	path = QtRestClient
-	url = git@github.com:cmguo/QtRestClient.git
+	url = ../QtRestClient.git
 	branch = master
 [submodule "QtTestbed"]
 	path = QtTestbed
-	url = git@github.com:cmguo/QtTestbed.git
+	url = ../QtTestbed.git
 	branch = master
 
 [submodule "InkCanvas"]
 	path = InkCanvas
-	url = ../talcloud_khaos_inkcanvas.git
+	url = ../QtInkCanvas.git
 	branch = develop/master
 [submodule "ShowBoard"]
 	path = ShowBoard
-	url = ../talcloud_khaos_show_board.git
+	url = ../ShowBoard.git
+	branch = develop/master
+[submodule "MultiMedia"]
+	path = MultiMedia
+	url = ../Multimedia.git
+	branch = develop/master
+[submodule "PageBox"]
+	path = PageBox
+	url = ../Pagebox.git
 	branch = develop/master
 [submodule "Geometry"]
 	path = Geometry
-	url = ../talcloud_khaos_geometry.git
+	url = ../Geometry.git
 	branch = develop/master
 [submodule "TeachingTools"]
 	path = TeachingTools
-	url = ../talcloud_khaos_teachingtools.git
-	branch = develop/master
-[submodule "UiBase"]
-	path = UiBase
-	url = ../talcloud_khaos_uibase.git
+	url = ../Teachingtools.git
 	branch = develop/master
 [submodule "InteractBase"]
 	path = InteractBase
-	url = ../talcloud_khaos_interact_base.git
+	url = ../InteractBase.git
 	branch = develop/master
 
+[submodule "UiBase"]
+	path = UiBase
+	url = ../UiBase.git
+	branch = develop/master
 [submodule "TalWeb"]
 	path = TalWeb
-	url = ../talcloud_khaos_qtwidgets.git
+	url = ../TalWeb.git
 	branch = develop/master
 [submodule "EventsLog"]
 	path = EventsLog
-	url = ../talcloud_khaos_eventslog.git
+	url = ../EventsLog.git
 	branch = develop/master
 [submodule "Assistant"]
 	path = Assistant
-	url = ../talcloud_khaos_assistant.git
+	url = ../Assistant.git
 	branch = develop/master
 [submodule "RobotPen"]
 	path = RobotPen
-	url = ../talcloud_khaos_robot_pen.git
+	url = ../BobotPen.git
 	branch = develop/master
 
 [submodule "TeachingLib"]
 	path = TeachingLib
-	url = ../talcloud_khaos_teaching.git
+	url = ../TeachingLib.git
 	branch = develop/master
 [submodule "InteractionLib"]
 	path = InteractionLib
-	url = ../talcloud_khaos_interaction_lib.git
+	url = ../InteractionLib.git
 	branch = develop/master
 [submodule "Account"]
 	path = Account
-	url = ../talcloud_khaos_account.git
+	url = ../Account.git
 	branch = develop/master
 
 [submodule "XhtHtml"]
 	path = XhtHtml
-	url = ../epg_iclass_plugin_fe.git
+	url = ../.XhtHtml.git
 	branch = feature/20201130
 [submodule "Html"]
 	path = Html
-	url = ../seg-iclass-plugin-fe.git
+	url = ../Html.git
 	branch = feature/1.8.1
 
 [submodule "docCovert"]
 	path = docCovert
-	url = ../talcloud_khaos_doc_convert.git
+	url = ../docConvert.git
 	branch = develop
 [submodule "thirdparty"]
 	path = thirdparty
-	url = ../talcloud_khaos_thirdparty.git
+	url = ../Thirdparty.git
 	branch = develop
 [submodule "Salt"]
 	path = Salt
-	url = ../talcloud_khaos_customization.git
+	url = ../Customization.git
 	branch = develop/master
 
 [submodule "Main"]
 	path = Main
-	url = ../talcloud_khaos_main.git
+	url = ../Main.git
 	branch = develop/master
 [submodule "nsis"]
 	path = nsis
-	url = ../talcloud_khaos_exe_packager.git
-	branch = develop/master
-[submodule "MultiMedia"]
-	path = MultiMedia
-	url = ../talcloud_khaos_multimedia.git
-	branch = develop/master
-[submodule "PageBox"]
-	path = PageBox
-	url = ../talcloud_khaos_pagebox.git
+	url = ../Packager.git
 	branch = develop/master
 [submodule "QtApp"]
 	path = QtApp
-	url = git@github.com:cmguo/QtApp.git
+	url = ../QtApp.git
 	branch = master
 [submodule "resource"]
 	path = resource
-	url = git@github.com:cmguo/QtApp-resources.git
+	url = ../QtApp-resources.git
 	branch = master
 [submodule "Hybridge"]
 	path = Hybridge
-	url = git@github.com:cmguo/Hybridge.git
+	url = ../Hybridge.git
 	branch = main
 [submodule "HybridgeC"]
 	path = HybridgeC
-	url = git@github.com:cmguo/HybridgeC.git
+	url = ../HybridgeC.git
 	branch = master
 [submodule "HybridgeQt"]
 	path = HybridgeQt
-	url = git@github.com:cmguo/HybridgeQt.git
+	url = ../HybridgeQt.git
 	branch = master
 [submodule "HybridgeJni"]
 	path = HybridgeJni
-	url = git@github.com:cmguo/HybridgeJni.git
+	url = ../HybridgeJni.git
 	branch = master
 [submodule "HybridgeDart"]
 	path = HybridgeDart
-	url = git@github.com:cmguo/HybridgeDart.git
+	url = ../HybridgeDart.git
 	branch = master
