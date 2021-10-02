@@ -56,21 +56,22 @@ SUBDIRS += \
     MultiMedia \
     PageBox \
     InteractBase \
-    UiBase \
+#    UiBase \
+#    TalWeb \
 
 ShowBoard.depends = QtComposition QtEventBus
 Geometry.depends = ShowBoard
 MultiMedia.depends = ShowBoard
 PageBox.depends = ShowBoard
-TeachingTools.depends = InkCanvas ShowBoard
+InteractBase.depends = InkCanvas PageBox ShowBoard
+TeachingTools.depends = InkCanvas PageBox ShowBoard
 
 SUBDIRS += \
-    TalWeb \
     EventsLog \
     EventsLogService \
-    # Upgrade \
-    # Guide \
-#    Salt/salt/Salt.pro \
+    Upgrade \
+    Guide \
+    Salt/salt/Salt.pro \
 
 Upgrade.subdir = Assistant/Upgrade
 Guide.subdir = Assistant/Guide
@@ -78,25 +79,23 @@ EventsLogService.file = EventsLog/EventsLogService.pro
 
 EventsLog.depends = QtComposition QtRestClient
 EventsLogService.depends = QtComposition QtRestClient EventsLog
-TalWeb.depends = EventsLog UiBase
+TalWeb.depends = EventsLog
 Upgrade.depends = QtComposition QtRestClient
-Guide.depends = QtEventBus UiBase
+Guide.depends = QtEventBus
 
 SUBDIRS += \
 #    XhtHtml/Html.pro \
-#    XhtHtml/Html.pro
-    InteractionLib \
-#    TeachingLib \
-#    Account \
-#    Main \
+#    InteractionLib \
+    TeachingLib \
+    Account \
+    Main \
 
-Account.depends = QtRestClient TalWeb EventsLog TalWeb \
-    XhtHtml/Html.pro
-TeachingLib.depends = QtRestClient Geometry PageBox TeachingTools EventsLog \
-    TalWeb Account Guide
-Main.depends = EventsLog TalWeb XhtHtml/Html.pro \
+Account.depends = QtRestClient EventsLog
+TeachingLib.depends = QtRestClient PageBox TeachingTools EventsLog \
+    Account Guide
+Main.depends = EventsLog \
     TeachingLib TeachingTools Salt/salt/Salt.pro Upgrade Guide
 
 SUBDIRS += QtApp
 
-QtApp.depends = QtRestClient UiBase Geometry ShowBoard TeachingTools \
+QtApp.depends = QtRestClient Geometry ShowBoard TeachingTools \
