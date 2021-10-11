@@ -68,67 +68,63 @@
 [submodule "UiBase"]
 	path = UiBase
 	url = ../UiBase.git
-	branch = develop/master
+	branch = master
 [submodule "TalWeb"]
 	path = TalWeb
 	url = ../TalWeb.git
-	branch = develop/master
+	branch = master
 [submodule "EventsLog"]
 	path = EventsLog
 	url = ../EventsLog.git
-	branch = develop/master
+	branch = master
 [submodule "Assistant"]
 	path = Assistant
 	url = ../Assistant.git
-	branch = develop/master
+	branch = master
 [submodule "RobotPen"]
 	path = RobotPen
-	url = ../BobotPen.git
-	branch = develop/master
+	url = ../RobotPen.git
+	branch = master
 
 [submodule "TeachingLib"]
 	path = TeachingLib
 	url = ../TeachingLib.git
-	branch = develop/master
+	branch = master
 [submodule "InteractionLib"]
 	path = InteractionLib
 	url = ../InteractionLib.git
-	branch = develop/master
+	branch = master
 [submodule "Account"]
 	path = Account
 	url = ../Account.git
-	branch = develop/master
+	branch = master
 
 [submodule "XhtHtml"]
 	path = XhtHtml
-	url = ../.XhtHtml.git
-	branch = feature/20201130
+	url = ../XhtHtml.git
+	branch = master
 [submodule "Html"]
 	path = Html
 	url = ../Html.git
-	branch = feature/1.8.1
+	branch = master
 
 [submodule "docCovert"]
 	path = docCovert
 	url = ../docConvert.git
-	branch = develop
-[submodule "thirdparty"]
-	path = thirdparty
-	url = ../Thirdparty.git
-	branch = develop
+	branch = master
 [submodule "Salt"]
 	path = Salt
 	url = ../Customization.git
-	branch = develop/master
+	branch = master
 
 [submodule "Main"]
 	path = Main
 	url = ../Main.git
-	branch = develop/master
+	branch = master
 [submodule "nsis"]
 	path = nsis
 	url = ../Packager.git
-	branch = develop/master
+	branch = master
 [submodule "QtApp"]
 	path = QtApp
 	url = ../QtApp.git
